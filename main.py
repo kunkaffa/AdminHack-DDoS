@@ -20,11 +20,13 @@ def typewriter(text, delay=0.002):
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(delay)
-    print()  # newline
+    print(massage)  # newline
 
 # ============================
 #   Banner ASCII
 # ============================
+attemps = 0
+os.system("clear")
 def display_header():
     header_lines = [
         Fore.BLACK + "═══════════════════════════════════════════════════════════════════",     
@@ -51,9 +53,23 @@ def display_header():
     for line in header_lines:
         print(line)
         time.sleep(0.0015)  # typing effect
+        print(f"\033[37m╔{'═' * 66}╗")
+print(f"\033[37m║\033[0m \033[41m{' ' * 20} SCRIPT ADMIN BLACK ARMY {' ' * 19}\033[0m \033[37m║")
+print(f"\033[37m║\033[0m \033[41m  Designt By: KunFay'99{' ' * 41}\033[0m \033[37m║")
+print(f"\033[37m╚{'═' * 66}╝")
+while attemps < 100:
+    username = input("\033[100m \033[32m••> Enter your username: \033[33m \033[0m")
+    password = input("\033[100m \033[31m••> Enter your password: \033[33m \033[0m")
 
+    if username == 'tc4teen' and password == 'tc4teen':
+        print("\033[104m \033[32m DEDICATED TO THE PALESTINE STRUGGLE \033[0m")
+        break
+    else:
+        print('Incorrect credentials. Check if you have Caps lock on and try again.')
+        attemps += 1
+        continue
 
-# ============================
+#=============================
 #   Layer 4 Stress Tes
 # ============================
 if choice == "1":
