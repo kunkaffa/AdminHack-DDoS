@@ -53,7 +53,7 @@ def display_header():
     for line in header_lines:
         print(line)
         time.sleep(0.0015)  # typing effect
-        print(f"\033[37m╔{'═' * 66}╗")
+print(f"\033[37m╔{'═' * 66}╗")
 print(f"\033[37m║\033[0m \033[41m{' ' * 20} SCRIPT ADMIN BLACK ARMY {' ' * 19}\033[0m \033[37m║")
 print(f"\033[37m║\033[0m \033[41m  Designt By: KunFay'99{' ' * 41}\033[0m \033[37m║")
 print(f"\033[37m╚{'═' * 66}╝")
