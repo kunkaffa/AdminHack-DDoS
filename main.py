@@ -59,16 +59,16 @@ def display_header():
 def main():
     clrar()
     display_header()
-    print(Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗ ")
-    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
-    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
-    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
-    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
-    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
-    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
-    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
-    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
-    print(Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝ ")
+    Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗ ")
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
+    Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝ ")
 def layer4_attack(target_ip, duration):
     print(Fore.RED + f"\n[🔥] Starting Layer 4 attack to {target_ip} for {duration} seconds...\n")
     start_time = time.time()
