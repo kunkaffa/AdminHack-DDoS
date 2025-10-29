@@ -139,8 +139,8 @@ def main():
     print(Fore.YELLOW + "2. Layer 7 HTTP \033[1;32m✓")
     choice = input(Fore.WHITE + "\nSelect option: ")
 
-else:
-    print(Fore.RED + "\n[!] Invalid choice.")
+    else:
+         print(Fore.RED + "\n[!] Invalid choice.")
 
 if __name__ == "__main__":
     main()
