@@ -100,7 +100,7 @@ def main():
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
     Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
-    if choice == "2":
+    elif choice == "2":
         url = input("==⟩ \033[32mURL: \033[33m")
         concurrency = int(input("==⟩ \033[32mSize: \033[33m"))
         duration = int(input("==⟩ \033[32mDuration: \033[33m"))
@@ -138,7 +138,12 @@ def main():
     print(Fore.YELLOW + "1. Layer 4 IP \033[1;32m✓")
     print(Fore.YELLOW + "2. Layer 7 HTTP \033[1;32m✓")
     choice = input(Fore.WHITE + "\nSelect option: ")
-         print(Fore.RED + "\n[!] Invalid choice.")
+
+if choice == "1":  
+ elif choice == "2":
+
+else:
+    print(Fore.RED + "\n[!] Invalid choice.")
     
 if __name__ == "__main__":
     main()
