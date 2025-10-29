@@ -106,7 +106,7 @@ def layer4_attack(target_ip, duration):
         time.sleep(0.2)
     print(Fore.GREEN + "\n[✔] LAYER 4 \033[1;31m F I N N A L Y  AT T A C K !\n")
     print(Fore.RED + "\n[!] Invalid choice.")
-if __name__ == "__main__":    
+   
 # ============================
 #   Layer 7 Stress Test
 # ============================
@@ -154,7 +154,7 @@ async def layer7_attack(url, concurrency, duration):
         results = await asyncio.gather(*tasks)
     print(Fore.WHITE + f"\n[✔] Total requests sent: {sum(results)}")
     print(Fore.RED + "\n[!] Invalid choice.")
-if __name__ == "__main__":  
+ 
 # ============================
 #   Menu Utama
 # ============================
