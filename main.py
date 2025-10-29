@@ -58,17 +58,23 @@ def display_header():
 # ============================
 def main():
     if choice == "1":
-        Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
-        Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
-        print("")
+    clear()
+def display_header():
+    header_lines = [
+    Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
+    Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
+    ]
+    for line in header_lines:
+        print(line)
+        time.sleep(0.0015)  # typing effe   
         target_ip = input("===⟩\033[32m IP: \033[33m")
         duration = int(input("===⟩\033[321m Duration: \033[33m"))
         layer4_attack(target_ip, duration)
@@ -89,18 +95,24 @@ def layer4_attack(target_ip, duration):
 #   Layer 7 Stress Test
 # ============================
 def main():
-    elif choice == "2"
-        Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
-        Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
-        Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
-        print("")
+    elif choice == "2":
+    clear()
+def display_header():
+    header_lines = [
+    Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
+    Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
+    ]
+    for line in header_lines:
+        print(line)
+        time.sleep(0.0015)  # typing effe   
         url = input("==⟩ \033[32mURL: \033[33m")
         concurrency = int(input("==⟩ \033[32mSize: \033[33m"))
         duration = int(input("==⟩ \033[32mDuration: \033[33m"))
