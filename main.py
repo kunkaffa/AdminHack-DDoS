@@ -11,7 +11,8 @@ init(autoreset=True)
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
-
+attemps = 0
+os.system("clear")
 # ============================
 #   Typing Animation
 # ============================
@@ -92,8 +93,6 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-attemps = 0
-os.system("clear")
 while attemps < 100:
     username = input("\033[100m \033[32m••> Enter your username: \033[33m \033[0m")
     password = input("\033[100m \033[31m••> Enter your password: \033[33m \033[0m")
