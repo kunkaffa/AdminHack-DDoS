@@ -72,6 +72,8 @@ while attemps < 100:
 #=============================
 #   Layer 4 Stress Tes
 # ============================
+def main():
+    clear()
     if choice == "1":   
         display_header():
         header_lines = [
@@ -108,6 +110,8 @@ if __name__ == "__main__":
 # ============================
 #   Layer 7 Stress Test
 # ============================
+def main():
+    clear()
     elif choice == "2":
           display_header():
           header_lines = [
