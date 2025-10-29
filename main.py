@@ -25,8 +25,6 @@ def typewriter(text, delay=0.002):
 # ============================
 #   Banner ASCII
 # ============================
-attemps = 0
-os.system("clear")
 def display_header():
     header_lines = [
     Fore.BLACK + "═══════════════════════════════════════════════════════════════════",     
@@ -94,6 +92,8 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
+attemps = 0
+os.system("clear")
 while attemps < 100:
     username = input("\033[100m \033[32m••> Enter your username: \033[33m \033[0m")
     password = input("\033[100m \033[31m••> Enter your password: \033[33m \033[0m")
