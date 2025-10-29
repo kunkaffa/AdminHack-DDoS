@@ -56,10 +56,8 @@ def display_header():
 # ============================
 #   Layer 4 Stress Tes
 # ============================
-def main():
-    if choice == "1":
-    clear()
-def display_header():
+if choice == "1":
+    display_header():
     header_lines = [
     Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
@@ -94,10 +92,8 @@ def layer4_attack(target_ip, duration):
 # ============================
 #   Layer 7 Stress Test
 # ============================
-def main():
-    elif choice == "2":
-    clear()
-def display_header():
+elif choice == "2":
+    display_header():
     header_lines = [
     Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
