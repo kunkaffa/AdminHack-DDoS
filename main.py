@@ -61,13 +61,13 @@ def display_header():
         username = input("\033[100m \033[32m••> Enter your username: \033[33m \033[0m")
         password = input("\033[100m \033[31m••> Enter your password: \033[33m \033[0m")
 
-    if username == 'tc4teen' and password == 'tc4teen':
-        print("\033[104m \033[32m DEDICATED TO THE PALESTINE STRUGGLE \033[0m")
-        break
-    else:
-        print('Incorrect credentials. Check if you have Caps lock on and try again.')
-        attemps += 1
-        continue
+        if username == 'tc4teen' and password == 'tc4teen':
+            print("\033[104m \033[32m DEDICATED TO THE PALESTINE STRUGGLE \033[0m")
+            break
+        else:
+            print('Incorrect credentials. Check if you have Caps lock on and try again.')
+            attemps += 1
+            continue
 
 # ============================
 #   Menu Utama
