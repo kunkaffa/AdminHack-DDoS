@@ -79,7 +79,9 @@ def main():
     print(Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "2. Layer 7 HTTP Attack")
     choice = input(Fore.WHITE + "\nSelect option: ")
-    print(Fore.RED + "\n[!] Invalid choice.")
+   
+    else: 
+        print(Fore.RED + "\n[!] Invalid choice.")
     
 #=============================
 #   Layer 4 Stress Tes
