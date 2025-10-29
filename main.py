@@ -83,8 +83,7 @@ def layer4_attack(target_ip, duration):
         print(Fore.RED + f"[] LAYER 4 {Fore.YELLOW}ADMIN-HACK {Fore.CYAN} SEN-PACKET {Fore.YELLOW} {CSS} {Fore.WHITE} BYTES TO {target_ip}:{port} {Fore.GREEN}Running :::")
         time.sleep(0.2)
     print(Fore.GREEN + "\n[✔] LAYER 4 \033[1;31m F I N N A L Y  AT T A C K !\n")
-    else:
-       print(Fore.RED + "\n[!] Invalid choice.")
+
 # ============================
 #   Layer 7 Stress Test
 # ============================
@@ -126,10 +125,6 @@ async def layer7_attack(url, concurrency, duration):
         tasks = [worker(session, url, stop_time) for _ in range(concurrency)]
         results = await asyncio.gather(*tasks)
     print(Fore.WHITE + f"\n[✔] Total requests sent: {sum(results)}")
-    
-    else:
-       print(Fore.RED + "\n[!] Invalid choice.")
-    
 
 # ============================
 #   Menu Utama
@@ -143,7 +138,7 @@ def main():
     print(Fore.YELLOW + "1. Layer 4 IP \033[1;32m✓")
     print(Fore.YELLOW + "2. Layer 7 HTTP \033[1;32m✓")
     choice = input(Fore.WHITE + "\nSelect option: ")
-
+    print(Fore.RED + "\n[!] Invalid choice.")
     
 if __name__ == "__main__":
     main()
