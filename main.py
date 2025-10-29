@@ -56,7 +56,7 @@ def display_header():
 # ============================
 #   Layer 4 Stress Tes
 # ============================
-    if choice == "1":
+if choice == "1":
 def main():
     clrar()
     display_header()
