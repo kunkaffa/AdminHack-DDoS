@@ -72,6 +72,7 @@ while attemps < 100:
 #=============================
 #   Layer 4 Stress Tes
 # ============================
+if __name__ == "__main__":
 if choice == "1":
     display_header():
     header_lines = [
@@ -88,7 +89,8 @@ if choice == "1":
     ]
     for line in header_lines:
         print(line)
-        time.sleep(0.0015)  # typing effe   
+        time.sleep(0.0015)  # typing effe
+        
         target_ip = input("===⟩\033[32m IP: \033[33m")
         duration = int(input("===⟩\033[321m Duration: \033[33m"))
         layer4_attack(target_ip, duration)
@@ -108,6 +110,7 @@ def layer4_attack(target_ip, duration):
 # ============================
 #   Layer 7 Stress Test
 # ============================
+if __name__ == "__main__":
 elif choice == "2":
     display_header():
     header_lines = [
@@ -157,14 +160,13 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-    print(Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗ ")
-    print(Fore.CYAN + Style.BRIGHT + "║  Author By: KUNFAY/github.com/nawaksara873-0xy/Copyright.2025  ║")
-    print(Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝ ")
-    print(Fore.YELLOW + "1. Layer 4 IP \033[1;32m✓")
-    print(Fore.YELLOW + "2. Layer 7 HTTP \033[1;32m✓")
+    print(Fore.MAGENTA + Style.BRIGHT + "=== ⚔️ BLACK ARMY DDOS TOOL ===")
+    print(Fore.YELLOW + "1. Layer 4 Attack")
+    print(Fore.CYAN + "2. Layer 7 HTTP Attack")
     choice = input(Fore.WHITE + "\nSelect option: ")
 
+    else:
+        print(Fore.RED + "\n[!] Invalid choice.")
 
-    
 if __name__ == "__main__":
     main()
