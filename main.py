@@ -57,7 +57,7 @@ def display_header():
 #   Layer 4 Stress Tes
 # ============================
 def main():
-    clrar()
+    clear()
     display_header()
     Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
@@ -88,7 +88,7 @@ def layer4_attack(target_ip, duration):
 #   Layer 7 Stress Test
 # ============================
 def main():
-    clrar()
+    clear()
     display_header()
     Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
@@ -138,7 +138,7 @@ def main():
     print(Fore.YELLOW + "1. Layer 4 IP \033[1;32m✓")
     print(Fore.YELLOW + "2. Layer 7 HTTP \033[1;32m✓")
     choice = input(Fore.WHITE + "\nSelect option: ")
-    print(Fore.RED + "\n[!] Invalid choice.")
+         print(Fore.RED + "\n[!] Invalid choice.")
     
 if __name__ == "__main__":
     main()
