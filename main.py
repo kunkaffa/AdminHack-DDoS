@@ -56,6 +56,7 @@ def display_header():
 # ============================
 #   Layer 4 Stress Tes
 # ============================
+    if choice == "1":
 def main():
     clrar()
     display_header()
@@ -69,6 +70,10 @@ def main():
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
     Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
+
+        target_ip = input("===⟩\033[32m IP: \033[33m")
+        duration = int(input("===⟩\033[321m Duration: \033[33m"))
+        layer4_attack(target_ip, duration)
 def layer4_attack(target_ip, duration):
     print(Fore.RED + f"\n[🔥] Starting Layer 4 attack to {target_ip} for {duration} seconds...\n")
     start_time = time.time()
@@ -116,11 +121,7 @@ def main():
     print(Fore.YELLOW + "2. Layer 7 HTTP \033[1;32m✓")
     choice = input(Fore.WHITE + "\nSelect option: ")
 
-    if choice == "1":
-        target_ip = input("===⟩\033[32m IP: \033[33m")
-        duration = int(input("===⟩\033[321m Duration: \033[33m"))
-        layer4_attack(target_ip, duration)
-
+    
     elif choice == "2":
         url = input("==⟩ \033[32mURL: \033[33m")
         concurrency = int(input("==⟩ \033[32mSize: \033[33m"))
