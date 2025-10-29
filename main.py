@@ -56,7 +56,6 @@ def display_header():
 # ============================
 #   Layer 4 Stress Tes
 # ============================
-if choice == "1":
 def main():
     clrar()
     display_header()
@@ -70,7 +69,7 @@ def main():
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
     Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
-
+    if choice == "1":
         target_ip = input("===⟩\033[32m IP: \033[33m")
         duration = int(input("===⟩\033[321m Duration: \033[33m"))
         layer4_attack(target_ip, duration)
@@ -88,6 +87,25 @@ def layer4_attack(target_ip, duration):
 # ============================
 #   Layer 7 Stress Test
 # ============================
+def main():
+    clrar()
+    display_header()
+    Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
+    Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
+    Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
+    elif choice == "2":
+        url = input("==⟩ \033[32mURL: \033[33m")
+        concurrency = int(input("==⟩ \033[32mSize: \033[33m"))
+        duration = int(input("==⟩ \033[32mDuration: \033[33m"))
+        asyncio.run(layer7_attack(url, concurrency, duration))
+                  
 async def worker(session, url, stop_time):
     hits = 0
     while time.time() < stop_time:
@@ -120,13 +138,6 @@ def main():
     print(Fore.YELLOW + "1. Layer 4 IP \033[1;32m✓")
     print(Fore.YELLOW + "2. Layer 7 HTTP \033[1;32m✓")
     choice = input(Fore.WHITE + "\nSelect option: ")
-
-    
-    elif choice == "2":
-        url = input("==⟩ \033[32mURL: \033[33m")
-        concurrency = int(input("==⟩ \033[32mSize: \033[33m"))
-        duration = int(input("==⟩ \033[32mDuration: \033[33m"))
-        asyncio.run(layer7_attack(url, concurrency, duration))
 
     else:
         print(Fore.RED + "\n[!] Invalid choice.")
