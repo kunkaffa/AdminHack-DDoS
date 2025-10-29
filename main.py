@@ -51,7 +51,8 @@ def display_header():
     Fore.BLACK + "══════════════════════════════════════════════════════════════════",     
     ]
     for line in header_lines:
-        print(line)   
+        print(line)  
+    time.sleep(0.0015)  # typing effect
 while attemps < 100:
     username = input("\033[100m \033[32m••> Enter your username: \033[33m \033[0m")
     password = input("\033[100m \033[31m••> Enter your password: \033[33m \033[0m")
