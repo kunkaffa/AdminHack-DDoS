@@ -57,6 +57,7 @@ def display_header():
 #   Layer 4 Stress Tes
 # ============================
 def main():
+    if choice == "1":
     clear()
     display_header()
     Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
@@ -69,10 +70,11 @@ def main():
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
     Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
-    if choice == "1":
+        print("")
         target_ip = input("===⟩\033[32m IP: \033[33m")
         duration = int(input("===⟩\033[321m Duration: \033[33m"))
         layer4_attack(target_ip, duration)
+
 def layer4_attack(target_ip, duration):
     print(Fore.RED + f"\n[🔥] Starting Layer 4 attack to {target_ip} for {duration} seconds...\n")
     start_time = time.time()
@@ -89,6 +91,7 @@ def layer4_attack(target_ip, duration):
 #   Layer 7 Stress Test
 # ============================
 def main():
+    elif choice == "2":
     clear()
     display_header()
     Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗",
@@ -101,7 +104,7 @@ def main():
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
     Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
-    if choice == "2":
+        print("")
         url = input("==⟩ \033[32mURL: \033[33m")
         concurrency = int(input("==⟩ \033[32mSize: \033[33m"))
         duration = int(input("==⟩ \033[32mDuration: \033[33m"))
