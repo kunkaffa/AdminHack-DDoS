@@ -56,6 +56,19 @@ def display_header():
 # ============================
 #   Layer 4 Stress Tes
 # ============================
+def main():
+    clrar()
+    display_header()
+    print(Fore.CYAN + "╔════════════════════════════════════════════════════════════════╗ ")
+    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╔╗            ╔════╗",
+    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ╔╝╔══╗╚╗",
+    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔╝    ╚╗║",
+    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║║       ║║",
+    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╚════╝║",
+    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║║          ║╔════╗║",
+    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
+    print(Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
+    print(Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝ ")
 def layer4_attack(target_ip, duration):
     print(Fore.RED + f"\n[🔥] Starting Layer 4 attack to {target_ip} for {duration} seconds...\n")
     start_time = time.time()
@@ -65,7 +78,7 @@ def layer4_attack(target_ip, duration):
         print(Fore.YELLOW + f"[] LAYER 4 {Fore.WHITE}ADMIN-HACK {Fore.BLUE} SEN-PACKET {Fore.GREEN} {CSS} {Fore.RED} BYTES TO {target_ip}:{port} {Fore.WHITE}Running ::")
         print(Fore.RED + f"[] LAYER 4 {Fore.YELLOW}ADMIN-HACK {Fore.CYAN} SEN-PACKET {Fore.YELLOW} {CSS} {Fore.WHITE} BYTES TO {target_ip}:{port} {Fore.GREEN}Running :::")
         time.sleep(0.2)
-    print(Fore.GREEN + "\n[✔] LAYER 4 \033[1;31m F I N N A L Y  A T T A C K !\n")
+    print(Fore.GREEN + "\n[✔] LAYER 4 \033[1;31m F I N N A L Y  AT T A C K !\n")
 
 # ============================
 #   Layer 7 Stress Test
