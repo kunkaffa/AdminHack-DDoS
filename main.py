@@ -100,7 +100,7 @@ def main():
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "║╚═════╗║║       ║║",
     Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
     Fore.CYAN + "╚════════════════════════════════════════════════════════════════╝",
-    elif choice == "2":
+     elif choice == "2":
         url = input("==⟩ \033[32mURL: \033[33m")
         concurrency = int(input("==⟩ \033[32mSize: \033[33m"))
         duration = int(input("==⟩ \033[32mDuration: \033[33m"))
