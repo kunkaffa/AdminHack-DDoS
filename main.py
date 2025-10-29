@@ -99,7 +99,7 @@ def main():
         Fore.CYAN + "║ \033[100m " + Fore.WHITE + "╚══════╝╚╝       ╚╝",
         Fore.CYAN + "╚══════════════════════════════════════════════════════════════",
               ]
-  if choice == "1":   
+    if choice == "1":   
         target_ip = input("===⟩\033[32m IP: \033[33m")
         duration = int(input("===⟩\033[321m Duration: \033[33m"))
         layer4_attack(target_ip, duration)
