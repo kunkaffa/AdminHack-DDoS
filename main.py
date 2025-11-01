@@ -103,8 +103,8 @@ def main():
     print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 42}\033[97m║")
     print(f"\r\033[97m╚{'═' * 71}╝")
     while attemps < 100:
-        print("\033[103m┏━━KunFayz━━⬣")
-        username = input("\033[103m┗> Enter your username: \033[103m ")
+        print("\033[32m┏━━KunFayz━━⬣")
+        username = input("\033[32m┗> Enter your username: \033[103m ")
         password = input("\033[32m┗> Enter your password: \033[0m")
 
         if username == 'admin' and password == 'admin':
