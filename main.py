@@ -96,7 +96,7 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-    print(Fore.WHITE + " ╔{'═'} * 57}╗")
+    print(Fore.WHITE + Style.BRIGHT + "╔{'═'} * 57}╗")
     print(Fore.WHITE + " ║" + Fore.CYAN + "{'' * 4}v.1.0{'║' * 69}")
     print(Fore.WHITE + " ║" + Fore.CYAN + "{'' * 4}https://kunkaffa@gmail.com{'║' * 27}")
     print(Fore.WHITE + " ╚{'═' * 57}╝")
