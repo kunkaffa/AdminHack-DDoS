@@ -44,9 +44,9 @@ def display_header():
     Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║██ ║            " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ████ ║              " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██████████ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║██ ║            " + Fore.RED + "║",
-    Fore.RED + "║" + Fore.RED + "           ██ ╔════██ ║" + Fore.WHITE + "   ██████ ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║  ██ ║         " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ██ ╔════██ ║" + Fore.WHITE + "   ██████ ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║  ██ ║         "  + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "   ███████ ║" + Fore.YELLOW + "  ██ ║   ██ ║         " + Fore.RED + "║",
-    Fore.RED + "║" + Fore.RED + "           ╚══╝    ╚══╝" + Fore.WHITE + "   ╚══╝   ╚══╝" + Fore.BLUE + "   ╚═══════╝" + Fore.YELLOW + "  ╚══╝   ╚══╝        " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ╚══╝    ╚══╝" + Fore.WHITE + "   ╚══╝   ╚══╝" + Fore.BLUE + "   ╚═══════╝" + Fore.YELLOW + "  ╚══╝   ╚══╝         " + Fore.RED + "║",
     Fore.RED + "║                                                                       " + Fore.RED + "║",
     Fore.RED + "╚═══════════════════════════════════════════════════════════════════════╝",     
     ]
@@ -96,10 +96,10 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-    print(f"\r\033[97m╔{'═' * 65}╗")
-    print(f"\r\033[97m║\033[32m   v.1.0{' ' * 57}\033[97m║")
-    print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 27}\033[97m║")
-    print(f"\r\033[97m╚{'═' * 65}╝")
+    print(f"\r\033[97m╔{'═' * 73}╗")
+    print(f"\r\033[97m║\033[32m   v.1.0{' ' * 60}\033[97m║")
+    print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 42}\033[97m║")
+    print(f"\r\033[97m╚{'═' * 75}╝")
     print(Fore.CYAN + "┏━━KunFayz━━⬣")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "2. Layer 7 HTTP Attack")
