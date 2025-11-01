@@ -62,7 +62,7 @@ def layer4_attack(target_ip, duration):
         port = random.randint(20, 65535)
         psize = random.randint(64, 1500)
         print(Fore.YELLOW + f"[L4] \033[100m {Fore.WHITE}ADMIN-HACK\033[0m {Fore.BLUE} SEN-PACKET {Fore.GREEN} {CSS} {Fore.RED} BYTES TO {target_ip}:{port} {Fore.WHITE}Running ::")
-        print(Fore.RED + f"[L4] {Fore.YELLOW}ADMIN-HACK {Fore.CYAN} SEN-PACKET {Fore.YELLOW} {CSS} {Fore.WHITE} BYTES TO \033[104{target_ip}\033[0m:{port} {Fore.GREEN}Running :::")
+        print(Fore.RED + f"[L4] {Fore.YELLOW}ADMIN-HACK {Fore.CYAN} SEN-PACKET {Fore.YELLOW} {CSS} {Fore.WHITE} BYTES TO \033[104m{target_ip}\033[0m:{port} {Fore.GREEN}Running :::")
         time.sleep(0.2)
     print(Fore.GREEN + "\n[✔] Layer 4 attack finished!\n")
 
