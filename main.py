@@ -29,7 +29,7 @@ def typewriter(text, delay=0.002):
 def display_header():
     header_lines = [
     Fore.RED + "╔═══════════════════════════════════════════════════════════════════════╗",     
-    Fore.RED + "║                                                                    " + Fore.RED + "║",
+    Fore.RED + "║                                                                       " + Fore.RED + "║",
     Fore.RED + "║" + Fore.YELLOW + "          ╔══" + Fore.MAGENTA + "         ╔═══════╗" + Fore.GREEN + "    ╔════╗ ╔════╗" + Fore.WHITE + " ╔══╗" + Fore.BLUE + " ╔═══╗     ╔══╗   " + Fore.RED + "║",
     Fore.RED + "║" + Fore.YELLOW + "          ███ ║" + Fore.MAGENTA + "      ████████ ║" + Fore.GREEN + "   █████ ║█████ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ████ ║    ██ ║   " + Fore.RED + "║",
     Fore.RED + "║" + Fore.YELLOW + "         ██ ██ ║" + Fore.MAGENTA + "     ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██ ║ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ██ ║   ██ ║   " + Fore.RED + "║",
@@ -38,7 +38,7 @@ def display_header():
     Fore.RED + "║" + Fore.YELLOW + "      ███████  ██ ║" + Fore.MAGENTA + "  ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██═╝ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ║  ██ ║██ ║   " + Fore.RED + "║",
     Fore.RED + "║" +  Fore.YELLOW + "     ██ ║       ██ ║" + Fore.MAGENTA + " ██ ╚════██ ║" + Fore.GREEN + " ██ ║      ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ║   ██ ██ ║   " + Fore.RED + "║",
     Fore.RED + "║" +  Fore.YELLOW + "    ██═╝         ██═╝" + Fore.MAGENTA + "████████═╝" + Fore.GREEN + "   ██═╝      ██═╝" + Fore.WHITE + " ██═╝" + Fore.BLUE + " ██═╝    ████═╝   " + Fore.RED + "║",
-    Fore.RED + "║                                                                       " +  Fore.RED + "║",
+    Fore.RED + "║                                                                          " +  Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██═╗    ██═╗" + Fore.WHITE + "     ████═╗" + Fore.BLUE + "      ███████ ║" + Fore.YELLOW + "  ██═╗   ██═╗      " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "    ██ ╔═██ ║" + Fore.BLUE + "   ██ ╔═════╝" + Fore.YELLOW + "  ██ ║  ██ ║         " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║██ ║       " + Fore.RED + "║",
@@ -47,7 +47,7 @@ def display_header():
     Fore.RED + "║" + Fore.RED + "           ██ ╔════██ ║" + Fore.WHITE + "   ██████ ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║  ██ ║         " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "   ███████ ║" + Fore.YELLOW + "  ██ ║   ██ ║           " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ╚══╝    ╚══╝" + Fore.WHITE + "   ╚══╝   ╚══╝" + Fore.BLUE + "   ╚═══════╝" + Fore.YELLOW + "  ╚══╝   ╚══╝       " + Fore.RED + "║",
-    Fore.RED + "║                                                                        " + Fore.RED + "║",
+    Fore.RED + "║                                                                         " + Fore.RED + "║",
     Fore.RED + "╚═══════════════════════════════════════════════════════════════════════╝",     
     ]
     for line in header_lines:
@@ -96,10 +96,10 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-    print(f"\r\033[97m╔{'═' * 57}╗")
-    print(f"r\\033[97m║\033[32m   v.1.0{' ' * 69}║")
-    print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 27}║")
-    print(f"\r\033[97m╚{'═' * 57}╝")
+    print(f"\r\033[97m╔{'═' * 74}╗")
+    print(f"\r\033[97m║\033[32m   v.1.0{' ' * 69}\033[97m║")
+    print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 27}\033[97m║")
+    print(f"\r\033[97m╚{'═' * 74}╝")
     print(Fore.CYAN + "┏━━KunFayz━━⬣")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "2. Layer 7 HTTP Attack")
