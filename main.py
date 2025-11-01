@@ -107,6 +107,7 @@ def main():
         password = input("\033[31mE┗> nter your password: \033[0m")
 
         if username == 'admin99' and password == 'admin99':
+            print("")
             break
         else:
             print('Incorrect credentials. Check if you have Caps lock on and try again.')
