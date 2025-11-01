@@ -22,7 +22,7 @@ def typewriter(text, delay=0.002):
         sys.stdout.flush()
         time.sleep(delay)
     print(massage)  # newline
-attems = 0
+
 # ============================
 #   Banner ASCII
 # ============================
