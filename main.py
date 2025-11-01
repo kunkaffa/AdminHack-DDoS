@@ -11,7 +11,8 @@ init(autoreset=True)
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
-
+    attemps = 0
+    os.system("clear")
 # ============================
 #   Typing Animation
 # ============================
@@ -25,8 +26,6 @@ def typewriter(text, delay=0.002):
 # ============================
 #   Banner ASCII
 # ============================
-attemps = 0
-os.system("clear")
 def display_header():
     header_lines = [
     Fore.RED + "╔═══════════════════════════════════════════════════════════════════════╗",     
@@ -101,7 +100,6 @@ def main():
     print(f"\r\033[97m║\033[32m   v.1.0{' ' * 63}\033[97m║")
     print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 42}\033[97m║")
     print(f"\r\033[97m╚{'═' * 71}╝")
-    
     while attemps < 100:
         print(f"\r\033[32m┏━━KunFayz━━⬣")
         username = input("\033[32m┗> Enter your username: \033[0m")
