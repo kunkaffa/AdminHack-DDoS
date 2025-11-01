@@ -118,7 +118,7 @@ def main():
     print(Fore.CYAN + "┏━━KunFayz━━⬣")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "2. Layer 7 HTTP Attack")
-    choice = input("\033[104m \033[97mSelect option: \033[0m")
+    choice = input("\033[97mSelect option: \033[0m")
 
     if choice == "1":
         print(Fore.CYAN + "┏━━KunFayz━━⬣")
