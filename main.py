@@ -47,7 +47,7 @@ def display_header():
     Fore.RED + "║" + Fore.RED + "           ██ ╔════██ ║" + Fore.WHITE + "   ██████ ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║  ██ ║       " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "   ███████ ║" + Fore.YELLOW + "  ██ ║   ██ ║       " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ╚══╝    ╚══╝" + Fore.WHITE + "   ╚══╝   ╚══╝" + Fore.BLUE + "   ╚═══════╝" + Fore.YELLOW + "  ╚══╝   ╚══╝      " + Fore.RED + "║",
-    Fore.RED + "║                                                                      " + Fore.RED + "║
+    Fore.RED + "║                                                                      " + Fore.RED + "║",
     Fore.RED + "╚══════════════════════════════════════════════════════════════════════╝",     
     ]
     for line in header_lines:
