@@ -100,12 +100,12 @@ def main():
     print(f"\r\033[97m║\033[32m   v.1.0{' ' * 63}\033[97m║")
     print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 42}\033[97m║")
     print(f"\r\033[97m╚{'═' * 71}╝")
-while attemps < 100:
-    print("\033[103m┏━━KunFayz━━⬣")
-    username = input("\033[103m┗> Enter your username: \033[103m ")
-    password = input("\033[32m┗> Enter your password: \033[0m")
+    while attemps < 100:
+        print("\033[103m┏━━KunFayz━━⬣")
+        username = input("\033[103m┗> Enter your username: \033[103m ")
+        password = input("\033[32m┗> Enter your password: \033[0m")
 
-    if username == 'admin' and password == 'admin':
+   if username == 'admin' and password == 'admin':
         print("\033[100m \033[31m••> ZONA FIGHT ZI0NIST \033[0m")
         break
     else:
