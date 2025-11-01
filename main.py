@@ -28,26 +28,27 @@ def typewriter(text, delay=0.002):
 # ============================
 def display_header():
     header_lines = [
-    Fore.RED + "╔═══════════════════════════════════════════════════════════════════╗",     
+    Fore.RED + "╔══════════════════════════════════════════════════════════════════════╗",     
     Fore.RED + "║" + Fore.YELLOW + "    ",
-    Fore.RED + "║" + Fore.YELLOW + "          ╔══" + Fore.MAGENTA + "         ╔═══════╗" + Fore.GREEN + "    ╔════╗ ╔════╗" + Fore.WHITE + " ╔══╗" + Fore.BLUE + " ╔═══╗     ╔══╗",
-    Fore.RED + "║" + Fore.YELLOW + "          ███ ║" + Fore.MAGENTA + "      ████████ ║" + Fore.GREEN + "   █████ ║█████ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ████ ║    ██ ║ ",
-    Fore.RED + "║" + Fore.YELLOW + "         ██ ██ ║" + Fore.MAGENTA + "     ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██ ║ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ██ ║   ██ ║ ",
-    Fore.RED + "║" + Fore.YELLOW + "        ██ ║ ██ ║" + Fore.MAGENTA + "    ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██ ║ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██  ██ ║  ██ ║   ",
-    Fore.RED + "║" + Fore.YELLOW + "       ██ ╚══ ██ ║" + Fore.MAGENTA + "   ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██ ║ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ║ ██ ║ ██ ║ ",
-    Fore.RED + "║" + Fore.YELLOW + "      ███████  ██ ║" + Fore.MAGENTA + "  ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██═╝ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ║  ██ ║██ ║ ",
-    Fore.RED + "║" +  Fore.YELLOW + "     ██ ║       ██ ║" + Fore.MAGENTA + " ██ ╚════██ ║" + Fore.GREEN + " ██ ║      ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ║   ██ ██ ║ ",
-    Fore.RED + "║" +  Fore.YELLOW + "    ██═╝         ██═╝" + Fore.MAGENTA + "████████═╝" + Fore.GREEN + "   ██═╝      ██═╝" + Fore.WHITE + " ██═╝" + Fore.BLUE + " ██═╝    ████═╝ ",
-    Fore.RED + "║" + Fore.YELLOW + "    ",
-    Fore.RED + "║" + Fore.RED + "        ██═╗    ██═╗" + Fore.WHITE + "     ████═╗" + Fore.BLUE + "      ███████ ║" + Fore.YELLOW + "  ██═╗   ██═╗ ",
-    Fore.RED + "║" + Fore.RED + "        ██ ║    ██ ║" + Fore.WHITE + "    ██ ╔═██ ║" + Fore.BLUE + "   ██ ╔═════╝" + Fore.YELLOW + "  ██ ║  ██ ║ ",
-    Fore.RED + "║" + Fore.RED + "        ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║██ ║ ",
-    Fore.RED + "║" + Fore.RED + "        ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ████ ║ ",
-    Fore.RED + "║" + Fore.RED + "        ██████████ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║██ ║ ",
-    Fore.RED + "║" + Fore.RED + "        ██ ╔════██ ║" + Fore.WHITE + "   ██████ ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║  ██ ║ ",
-    Fore.RED + "║" + Fore.RED + "        ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "   ███████ ║" + Fore.YELLOW + "  ██ ║   ██ ║ ",
-    Fore.RED + "║" + Fore.RED + "        ╚══╝    ╚══╝" + Fore.WHITE + "   ╚══╝   ╚══╝" + Fore.BLUE + "   ╚═══════╝" + Fore.YELLOW + "  ╚══╝   ╚══╝ ",
-    Fore.RED + "╚═══════════════════════════════════════════════════════════════════╝",     
+    Fore.RED + "║" + Fore.YELLOW + "          ╔══" + Fore.MAGENTA + "         ╔═══════╗" + Fore.GREEN + "    ╔════╗ ╔════╗" + Fore.WHITE + " ╔══╗" + Fore.BLUE + " ╔═══╗     ╔══╗   " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.YELLOW + "          ███ ║" + Fore.MAGENTA + "      ████████ ║" + Fore.GREEN + "   █████ ║█████ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ████ ║    ██ ║   " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.YELLOW + "         ██ ██ ║" + Fore.MAGENTA + "     ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██ ║ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ██ ║   ██ ║   " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.YELLOW + "        ██ ║ ██ ║" + Fore.MAGENTA + "    ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██ ║ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██  ██ ║  ██ ║   " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.YELLOW + "       ██ ╚══ ██ ║" + Fore.MAGENTA + "   ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██ ║ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ║ ██ ║ ██ ║   " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.YELLOW + "      ███████  ██ ║" + Fore.MAGENTA + "  ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██═╝ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ║  ██ ║██ ║   " + Fore.RED + "║",
+    Fore.RED + "║" +  Fore.YELLOW + "     ██ ║       ██ ║" + Fore.MAGENTA + " ██ ╚════██ ║" + Fore.GREEN + " ██ ║      ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ║   ██ ██ ║   " + Fore.RED + "║",
+    Fore.RED + "║" +  Fore.YELLOW + "    ██═╝         ██═╝" + Fore.MAGENTA + "████████═╝" + Fore.GREEN + "   ██═╝      ██═╝" + Fore.WHITE + " ██═╝" + Fore.BLUE + " ██═╝    ████═╝   " + Fore.RED + "║",
+    Fore.RED + "║                                                                           " +  Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ██═╗    ██═╗" + Fore.WHITE + "     ████═╗" + Fore.BLUE + "      ███████ ║" + Fore.YELLOW + "  ██═╗   ██═╗      " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "    ██ ╔═██ ║" + Fore.BLUE + "   ██ ╔═════╝" + Fore.YELLOW + "  ██ ║  ██ ║         " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║██ ║       " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ████ ║       " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ██████████ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║██ ║       " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ██ ╔════██ ║" + Fore.WHITE + "   ██████ ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║  ██ ║       " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "   ███████ ║" + Fore.YELLOW + "  ██ ║   ██ ║       " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ╚══╝    ╚══╝" + Fore.WHITE + "   ╚══╝   ╚══╝" + Fore.BLUE + "   ╚═══════╝" + Fore.YELLOW + "  ╚══╝   ╚══╝      " + Fore.RED + "║",
+    Fore.RED + "║                                                                      " + Fore.RED + "║
+    Fore.RED + "╚══════════════════════════════════════════════════════════════════════╝",     
     ]
     for line in header_lines:
         print(line)  
@@ -95,25 +96,26 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-    print(Fore.WHITE + "╔{'═' * 57}╗")
-    print(Fore.CYAN + "║{' ' * 4}v.1.0{' ' * 69}")
-    print(Fore.CYAN + "║{' ' * 4}https://kunkaffa@gmail.com{' ' * 27}")
-    print(Fore.CYAN + "╚{'═' * 57}╝")
-    
+    print(Fore.WHITE + " ╔{'═' * 57}╗")
+    print(Fore.WHITE + " ║" + Fore.CYAN + "{' ' * 4}v.1.0{' ' * 69}")
+    print(Fore.WHITE + " ║" + Fore.CYAN + "{' ' * 4}https://kunkaffa@gmail.com{' ' * 27}")
+    print(Fore.WHITE + " ╚{'═' * 57}╝")
     print(Fore.CYAN + "┏━━KunFayz━━⬣")
-    print(Fore.CYAN + "┗> 1. Layer 4 Attack")
-    print(Fore.CYAN + "┗> 2. Layer 7 HTTP Attack")
+    print(Fore.CYAN + "┗> " + Fore.YELLOW + " 1. Layer 4 Attack")
+    print(Fore.CYAN + "┗> " + Fore.YELLOW + " 2. Layer 7 HTTP Attack")
     choice = input(Fore.WHITE + "\nSelect option: ")
 
     if choice == "1":
-        target_ip = input("Target IP: ")
-        duration = int(input("Duration (seconds): "))
+        print(Fore.CYAN + "┏━━KunFayz━━⬣")
+        target_ip = input(Fore.CYAN + "┗> Target IP: ")
+        duration = int(input(Fore.CYAN + "┗> Duration (seconds): "))
         layer4_attack(target_ip, duration)
 
     elif choice == "2":
-        url = input("Target URL (ex: http://israel.co.il): ")
-        concurrency = int(input("Concurrent connections: "))
-        duration = int(input("Duration (seconds): "))
+        print(Fore.CYAN + "┏━━KunFayz━━⬣")
+        url = input(Fore.CYAN + "┗> Target URL: ")
+        concurrency = int(input(Fore.CYAN + "┗> Concurrent connections: "))
+        duration = int(input(Fore.CYAN + "┗> Duration (seconds): "))
         asyncio.run(layer7_attack(url, concurrency, duration))
 
     else:
