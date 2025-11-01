@@ -104,13 +104,13 @@ def main():
       username = input("\033[32mEnter your username: \033[0m")
       password = input("\033[31mEnter your password: \033[0m")
 
-    if username == 'bp4' and password == 'bp4':
-        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
-        break
-    else:
-        print('Incorrect credentials. Check if you have Caps lock on and try again.')
-        attemps += 1
-        continue
+      if username == 'admin' and password == 'admin':
+          print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+          break
+      else:
+          print('Incorrect credentials. Check if you have Caps lock on and try again.')
+          attemps += 1
+          continue
     print(Fore.CYAN + "┏━━KunFayz━━⬣")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "2. Layer 7 HTTP Attack")
