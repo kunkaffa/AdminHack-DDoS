@@ -104,11 +104,11 @@ def main():
     print(f"\r\033[97m╚{'═' * 71}╝")
     while attemps < 100:
         print("\033[32m┏━━KunFayz━━⬣")
-        username = input("\033[32m┗> Enter your username: \033[103m ")
+        username = input("\033[32m┗> Enter your username: \033[0m")
         password = input("\033[32m┗> Enter your password: \033[0m")
 
         if username == 'admin' and password == 'admin':
-            print("\033[100m \033[31m••> ZONA FIGHT ZI0NIST \033[0m")
+            print("\033[100m \033[31m••> WELOCOME TO ZONA ADMIN HACK \033[0m")
             break
         else:
             print('Incorrect credentials. Check if you have Caps lock on and try again.')
