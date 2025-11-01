@@ -100,8 +100,8 @@ def main():
     print("Fore.CYAN + ║{' ' * 4}https://kunkaffa@gmail.com{' ' * 27}")
     print("Fore.CYAN + ╚{'═' * 57}╝")
     
-    print(Fore.CYAN +
-    print(Fore.YELLOW + "1. Layer 4 Attack")
+    print(Fore.CYAN + "┏━━KunFayz━━⬣
+    print(Fore.CYAN + "1. Layer 4 Attack")
     print(Fore.CYAN + "2. Layer 7 HTTP Attack")
     choice = input(Fore.WHITE + "\nSelect option: ")
 
