@@ -102,16 +102,16 @@ def main():
     print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 42}\033[97m║")
     print(f"\r\033[97m╚{'═' * 71}╝")
     while attemps < 100:
-    print(f"\r\033[32m┏━━KunFayz━━⬣")
-    username = input("\033[32m┗> Enter your username: \033[0m")
-    password = input("\033[31mE┗> nter your password: \033[0m")
+        print(f"\r\033[32m┏━━KunFayz━━⬣")
+        username = input("\033[32m┗> Enter your username: \033[0m")
+        password = input("\033[31mE┗> nter your password: \033[0m")
 
-    if username == 'admin99' and password == 'admin99':
-        break
-    else:
-        print('Incorrect credentials. Check if you have Caps lock on and try again.')
-        attemps += 1
-        continue
+        if username == 'admin99' and password == 'admin99':
+            break
+        else:
+            print('Incorrect credentials. Check if you have Caps lock on and try again.')
+            attemps += 1
+            continue
     print(Fore.CYAN + "┏━━KunFayz━━⬣")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "2. Layer 7 HTTP Attack")
