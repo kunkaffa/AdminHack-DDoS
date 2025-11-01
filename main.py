@@ -29,7 +29,7 @@ def typewriter(text, delay=0.002):
 def display_header():
     header_lines = [
     Fore.RED + "╔═══════════════════════════════════════════════════════════════════════╗",     
-    Fore.RED + "║" + Fore.YELLOW + "    ",
+    Fore.RED + "║                                                                    " + Fore.RED + "║",
     Fore.RED + "║" + Fore.YELLOW + "          ╔══" + Fore.MAGENTA + "         ╔═══════╗" + Fore.GREEN + "    ╔════╗ ╔════╗" + Fore.WHITE + " ╔══╗" + Fore.BLUE + " ╔═══╗     ╔══╗   " + Fore.RED + "║",
     Fore.RED + "║" + Fore.YELLOW + "          ███ ║" + Fore.MAGENTA + "      ████████ ║" + Fore.GREEN + "   █████ ║█████ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ████ ║    ██ ║   " + Fore.RED + "║",
     Fore.RED + "║" + Fore.YELLOW + "         ██ ██ ║" + Fore.MAGENTA + "     ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██ ║ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ██ ║   ██ ║   " + Fore.RED + "║",
@@ -96,7 +96,7 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-    print("\033[97m╔{'═'} * 57}╗")
+    print("\033[97m╔{'═'} * 57}╗\033[0m")
     print("\033[97m║" + Fore.CYAN + "   v.1.0{'║' * 69}")
     print("\033[97m║" + Fore.CYAN + "   https://kunkaffa@gmail.com{'║' * 27}")
     print("\033[97m╚{'═' * 57}╝")
