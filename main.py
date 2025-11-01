@@ -108,12 +108,12 @@ def main():
         password = input("\033[32m┗> Enter your password: \033[0m")
 
         if username == 'admin' and password == 'admin':
-             print("\033[100m \033[31m••> ZONA FIGHT ZI0NIST \033[0m")
-             break
-         else:
-             print('Incorrect credentials. Check if you have Caps lock on and try again.')
-             attemps += 1
-             continue
+            print("\033[100m \033[31m••> ZONA FIGHT ZI0NIST \033[0m")
+            break
+        else:
+            print('Incorrect credentials. Check if you have Caps lock on and try again.')
+            attemps += 1
+            continue
 
     print(Fore.CYAN + "┏━━KunFayz━━⬣")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "1. Layer 4 Attack")
