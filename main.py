@@ -96,7 +96,7 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-    print(f"\r\033[97m╔{'═'} * 57}╗\033[0m")
+    print(f"\r\033[97m╔{'═' * 57}╗")
     print(f"r\\033[97m║\033[32m   v.1.0{'║' * 69}")
     print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{'║' * 27}")
     print(f"\r\033[97m╚{'═' * 57}╝")
