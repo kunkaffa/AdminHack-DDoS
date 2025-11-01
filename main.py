@@ -96,14 +96,15 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-    print(f"\r\033[97m╔{'═' * 70}╗")
-    print(f"\r\033[97m║\033[32m   v.1.0{' ' * 62}\033[97m║")
-    print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 41}\033[97m║")
-    print(f"\r\033[97m╚{'═' * 70}╝")
+    print(f"\r\033[97m╔{'═' * 71}╗")
+    print(f"\r\033[97m║\033[32m   v.1.0{' ' * 63}\033[97m║")
+    print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 42}\033[97m║")
+    print(f"\r\033[97m╚{'═' * 71}╝")
     print(Fore.CYAN + "┏━━KunFayz━━⬣")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "2. Layer 7 HTTP Attack")
-    choice = input(Fore.WHITE + "\nSelect option: ")
+    
+    choice = input("\033[104m \033[97mSelect option: \033[0m")
 
     if choice == "1":
         print(Fore.CYAN + "┏━━KunFayz━━⬣")
