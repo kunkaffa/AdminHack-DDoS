@@ -100,7 +100,17 @@ def main():
     print(f"\r\033[97m║\033[32m   v.1.0{' ' * 63}\033[97m║")
     print(f"\r\033[97m║\033[32m   https://kunkaffa@gmail.com{' ' * 42}\033[97m║")
     print(f"\r\033[97m╚{'═' * 71}╝")
+    while attemps < 100:
+      username = input("\033[32mEnter your username: \033[0m")
+      password = input("\033[31mEnter your password: \033[0m")
 
+    if username == 'bp4' and password == 'bp4':
+        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+        break
+    else:
+        print('Incorrect credentials. Check if you have Caps lock on and try again.')
+        attemps += 1
+        continue
     print(Fore.CYAN + "┏━━KunFayz━━⬣")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "2. Layer 7 HTTP Attack")
