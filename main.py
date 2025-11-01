@@ -28,8 +28,6 @@ def typewriter(text, delay=0.002):
 #   Banner ASCII
 # ============================
 def display_header():
-    attemps = 0
-    os.system("clear")
     header_lines = [
     Fore.RED + "╔═══════════════════════════════════════════════════════════════════════╗",     
     Fore.RED + "║                                                                       " + Fore.RED + "║",
@@ -97,7 +95,8 @@ async def layer7_attack(url, concurrency, duration):
 #   Menu Utama
 # ============================
 def main():
-    clear()
+    attemps = 0
+    os.system("clear")
     display_header()
     print(f"\r\033[97m╔{'═' * 71}╗")
     print(f"\r\033[97m║\033[32m   v.1.0{' ' * 63}\033[97m║")
