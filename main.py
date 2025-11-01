@@ -95,7 +95,12 @@ async def layer7_attack(url, concurrency, duration):
 def main():
     clear()
     display_header()
-    print(Fore.MAGENTA + Style.BRIGHT + "=== ⚔️ BLACK ARMY DDOS TOOL ===")
+    print("Fore.WHITE + ╔{'═' * 57}╗")
+    print("Fore.CYAN + ║{' ' * 4}v.1.0{' ' * 69}")
+    print("Fore.CYAN + ║{' ' * 4}https://kunkaffa@gmail.com{' ' * 27}")
+    print("Fore.CYAN + ╚{'═' * 57}╝")
+    
+    print(Fore.CYAN +
     print(Fore.YELLOW + "1. Layer 4 Attack")
     print(Fore.CYAN + "2. Layer 7 HTTP Attack")
     choice = input(Fore.WHITE + "\nSelect option: ")
