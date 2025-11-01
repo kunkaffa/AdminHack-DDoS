@@ -38,16 +38,16 @@ def display_header():
     Fore.RED + "║" + Fore.YELLOW + "      ███████  ██ ║" + Fore.MAGENTA + "  ██ ║    ██ ║" + Fore.GREEN + " ██ ║ ██═╝ ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ║  ██ ║██ ║   " + Fore.RED + "║",
     Fore.RED + "║" +  Fore.YELLOW + "     ██ ║       ██ ║" + Fore.MAGENTA + " ██ ╚════██ ║" + Fore.GREEN + " ██ ║      ██ ║" + Fore.WHITE + " ██ ║" + Fore.BLUE + " ██ ║   ██ ██ ║   " + Fore.RED + "║",
     Fore.RED + "║" +  Fore.YELLOW + "    ██═╝         ██═╝" + Fore.MAGENTA + "████████═╝" + Fore.GREEN + "   ██═╝      ██═╝" + Fore.WHITE + " ██═╝" + Fore.BLUE + " ██═╝    ████═╝   " + Fore.RED + "║",
-    Fore.RED + "║                                                                           " +  Fore.RED + "║",
+    Fore.RED + "║                                                                       " +  Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██═╗    ██═╗" + Fore.WHITE + "     ████═╗" + Fore.BLUE + "      ███████ ║" + Fore.YELLOW + "  ██═╗   ██═╗      " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "    ██ ╔═██ ║" + Fore.BLUE + "   ██ ╔═════╝" + Fore.YELLOW + "  ██ ║  ██ ║         " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║██ ║       " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ████ ║       " + Fore.RED + "║",
     Fore.RED + "║" + Fore.RED + "           ██████████ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║██ ║       " + Fore.RED + "║",
-    Fore.RED + "║" + Fore.RED + "           ██ ╔════██ ║" + Fore.WHITE + "   ██████ ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║  ██ ║       " + Fore.RED + "║",
-    Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "   ███████ ║" + Fore.YELLOW + "  ██ ║   ██ ║          " + Fore.RED + "║",
-    Fore.RED + "║" + Fore.RED + "           ╚══╝    ╚══╝" + Fore.WHITE + "   ╚══╝   ╚══╝" + Fore.BLUE + "   ╚═══════╝" + Fore.YELLOW + "  ╚══╝   ╚══╝        " + Fore.RED + "║",
-    Fore.RED + "║                                                                       " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ██ ╔════██ ║" + Fore.WHITE + "   ██████ ██ ║" + Fore.BLUE + "  ██ ║" + Fore.YELLOW + "        ██ ║  ██ ║         " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ██ ║    ██ ║" + Fore.WHITE + "   ██ ║   ██ ║" + Fore.BLUE + "   ███████ ║" + Fore.YELLOW + "  ██ ║   ██ ║           " + Fore.RED + "║",
+    Fore.RED + "║" + Fore.RED + "           ╚══╝    ╚══╝" + Fore.WHITE + "   ╚══╝   ╚══╝" + Fore.BLUE + "   ╚═══════╝" + Fore.YELLOW + "  ╚══╝   ╚══╝       " + Fore.RED + "║",
+    Fore.RED + "║                                                                        " + Fore.RED + "║",
     Fore.RED + "╚═══════════════════════════════════════════════════════════════════════╝",     
     ]
     for line in header_lines:
@@ -97,8 +97,8 @@ def main():
     clear()
     display_header()
     print("\033[97m╔{'═'} * 57}╗")
-    print("\033[97m║" + Fore.CYAN + "{'' * 4}v.1.0{'║' * 69}")
-    print("\033[97m║" + Fore.CYAN + "{'' * 4}https://kunkaffa@gmail.com{'║' * 27}")
+    print("\033[97m║" + Fore.CYAN + "   v.1.0{'║' * 69}")
+    print("\033[97m║" + Fore.CYAN + "   https://kunkaffa@gmail.com{'║' * 27}")
     print("\033[97m╚{'═' * 57}╝")
     print(Fore.CYAN + "┏━━KunFayz━━⬣")
     print(Fore.CYAN + "┗> " + Fore.YELLOW + "1. Layer 4 Attack")
